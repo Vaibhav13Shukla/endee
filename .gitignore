@@ -1,98 +1,32 @@
-# ==============================================
-# The Monk AI - Git Ignore File
-# ==============================================
 
-# --- Python ---
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
+# Ignore build directory
 build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# Ignore build like directory
+build*/
+# Ignore all files in the build directory
+build/*
 
-# --- Virtual Environments ---
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# Ignore tests build directory
+tests/build/
+tests/build*/
 
-# --- IDEs & Editors ---
+# Test binaries
+tests/**/ndd_filter_test
+
+# macOS debug symbols
+*.dSYM/
+
+# Sometimes data files are created for tetsing
+data/
+data/*
+
+# VS Code directory
 .vscode/
-.idea/
-*.swp
-*.swo
-*~
+.vscode/*
+
+# Frontend
+frontend/
+frontend/*
+
+# DS Store
 .DS_Store
-Thumbs.db
-
-# --- Testing & Coverage ---
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-htmlcov/
-
-# --- Linters & Formatters ---
-.ruff_cache/
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# --- Jupyter Notebook ---
-.ipynb_checkpoints
-
-# --- Logs ---
-*.log
-*.out
-*.err
-
-# --- Generated Files ---
-system_check_results.json
-*.tmp
-*.temp
-
-# --- Data Files (Large) ---
-# Uncomment if data files are too large:
-# data/*.jsonl
-# data/*.json
-
-# --- Environment & Secrets ---
-.env.local
-.env.*.local
-!.env.example
-
-# --- OS Files ---
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Desktop.ini
